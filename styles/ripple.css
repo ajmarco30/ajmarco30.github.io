@@ -1,0 +1,68 @@
+.ripple-button{
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+}
+.splash{
+	pointer-events:none;
+	position:absolute;
+	background:#9E9E9E;
+	border-radius:50%;
+	opacity:0.5;
+
+	/*Animations*/
+	transform: scale(0,0);
+	animation: splash 1s, fade 1.5s;
+
+	-webkit-transform: scale(0,0);
+	-webkit-animation: splash 1s, fade 1.5s;
+
+	-ms-transform: scale(0,0);
+	-ms-animation: splash 1s, fade 1.5s;
+
+	-moz-transform: scale(0,0);
+	-moz-animation: splash 1s, fade 1.5s;
+
+	-o-transform: scale(0,0);
+	-o-animation: splash 1s, fade 1.5s;
+}
+@keyframes splash {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}
+@keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:0;}
+}
+@-webkit-keyframes splash {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}
+@-webkit-keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:0;}
+}
+@-ms-keyframes splash {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}
+@-ms-keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:0;}
+}
+@-moz-keyframes splash {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}
+@-moz-keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:0;}
+}
+@-o-keyframes splash {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}
+@-o-keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:0;}
+}
