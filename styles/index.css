@@ -44,6 +44,8 @@ html, body{
   width:100%;
   overflow:hidden;
 }
+
+/*Mobile*/
 mobile-header{
   display:block;
   z-index:2;
@@ -219,23 +221,32 @@ mobile-section{
   height:100px;
   text-align:center;
 }
+.mobile-product-title{
+  box-sizing:border-box;
+  padding:16px 16px 4px 16px;
+  margin-top:32px;
+  font-size:28px;
+}
+.mobile-product-description{
+  box-sizing:border-box;
+  font-size:16px;
+  width:100%;
+  opacity:0.4;
+}
 .mobile-ledger-pic{
   position:relative;
   margin:auto;
-  margin-top:16px;
-  width:100%;
-  max-width:400px;
+  margin-top:32px;
+  width:80%;
+  max-width:360px;
 
   filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.4));
 }
-.mobile-product-title{
-  box-sizing:border-box;
-  padding:16px;
-  margin-top:32px;
-  font-size:28px;
 
-}
 
+
+
+/*Desktop*/
 desktop-header{
   display:none;
   position:fixed;
