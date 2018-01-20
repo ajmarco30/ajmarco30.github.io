@@ -3,40 +3,79 @@
 <head>
 <title>Uncommon Tech</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="utf-8">
 <!--CSS-->
 <link rel="stylesheet" href="./styles/index.css">
 <link rel="stylesheet" href="./styles/ripple.css">
 <!---->
 
+<!--Javascript-->
+<script src="./js/threejs/examples/js/libs/dat.gui.min.js"></script>
+<script src="./js/threejs/build/three.js"></script>
+<script src="./js/threejs/examples/js/controls/OrbitControls.js"></script>
+<script src="./js/threejs/examples/js/libs/stats.min.js"></script>
+<!---->
 </head>
 <body>
   <mobile-header>
     <header-button class='ripple-button' onclick='toggleHamburger();'>
 			<hamburger>
-				<hamburger-top></hamburger-top>
-				<hamburger-middle></hamburger-middle>
-				<hamburger-bottom></hamburger-bottom>
+				<hamburger-top1></hamburger-top1>
+        <hamburger-top2></hamburger-top2>
+				<hamburger-middle1></hamburger-middle1>
+        <hamburger-middle2></hamburger-middle2>
+				<hamburger-bottom1></hamburger-bottom1>
+        <hamburger-bottom2></hamburger-bottom2>
 			</hamburger>
 		</header-button>
-    <svg height="300" width="300" class='logo'>
-      <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0%" stop-color="#44F12C" stop-opacity="0"/>
-        <stop offset="50%" stop-color="#44F12C" stop-opacity="0.8"/>
-        <stop offset="100%" stop-color="#44F12C" stop-opacity="0.9"/>
-      </linearGradient>
-      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0%" stop-color="#44F12C" stop-opacity="0"/>
-        <stop offset="50%" stop-color="#44F12C" stop-opacity="0.8"/>
-        <stop offset="100%" stop-color="#44F12C" stop-opacity="0.9"/>
-      </linearGradient>
-      <path d="M15 70 L147 273 L139 173 L105 160 L105 120 Z" fill='url(#Gradient1)'/>
-      <path d="M290 70 L158 273 L166 173 L200 160 L200 120 Z" fill='url(#Gradient2)'/>
-    </svg>
+    <header-button style='position:absolute;top:0;left:0;right:0;margin:auto;'>
+      <svg height="300" width="300" class='logo' viewBox="0 0 300 300">
+        <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#44F12C" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#44F12C" stop-opacity="0.8"/>
+          <stop offset="100%" stop-color="#44F12C" stop-opacity="0.9"/>
+        </linearGradient>
+        <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#44F12C" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#44F12C" stop-opacity="0.8"/>
+          <stop offset="100%" stop-color="#44F12C" stop-opacity="0.9"/>
+        </linearGradient>
+        <path d="M15 70 L147 273 L139 173 L105 160 L105 120 Z" fill='url(#Gradient1)'/>
+        <path d="M290 70 L158 273 L166 173 L200 160 L200 120 Z" fill='url(#Gradient2)'/>
+      </svg>
+    </header-button>
+    <cart>
+      <header-button class='ripple-button'>
+        <svg fill="#9E9E9E" height="36" viewBox="0 0 24 24" width="36" class='cart'>
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </header-button>
+    </cart>
   </mobile-header>
+  <mobile-menu>
+    <mobile-menu-item class='ripple-button'>
+      About
+    </mobile-menu-item>
+    <mobile-menu-item class='ripple-button'>
+      Products
+    </mobile-menu-item>
+    <mobile-menu-item class='ripple-button'>
+      Cryptocurrencies
+    </mobile-menu-item>
+    <mobile-menu-item class='ripple-button'>
+      Apps
+    </mobile-menu-item>
+    <mobile-menu-item class='ripple-button'>
+      Setup wallet
+    </mobile-menu-item>
+  </mobile-menu>
+
   <desktop-header></desktop-header>
+  <!--<div id="container"></div>-->
+
 </body>
 <script src='./js/index.js'></script>
 <script src='./js/ripple.js'></script>
-
+<!--<script src='./js/background.js'></script>-->
 </html>
