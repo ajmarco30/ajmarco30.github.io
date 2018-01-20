@@ -225,11 +225,11 @@ desktop-header{
 
 /*ALL*/
 #container{
-  height:600px;
+  height:50vh;
 }
 .billboard{
   position:absolute;
-  top:120px;
+  top:180px;
   height:400px;
   background:transparent;
   width:100%;
