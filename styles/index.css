@@ -214,11 +214,12 @@ mobile-menu-item{
 }
 mobile-section{
   display:block;
+  position:relative;
   box-sizing:border-box;
   padding:16px;
   width:100%;
-  height:100px;
   text-align:center;
+  border-bottom:1px solid #E0E0E0;
 }
 .mobile-product-title{
   box-sizing:border-box;
