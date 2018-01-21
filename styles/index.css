@@ -257,6 +257,11 @@ mobile-section{
 .mobile-product-features li{
   transform:translateX(-16px);
 }
+mobile-footer{
+  display:block;
+  width:100%;
+  height:300px;
+}
 
 
 

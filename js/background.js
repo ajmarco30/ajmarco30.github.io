@@ -35,7 +35,7 @@
     colors = new Float32Array( segments * 3 );
     var pMaterial = new THREE.PointsMaterial( {
       color: 0xffffff,
-      size: 3,
+      size: 1,
       blending: THREE.SubtractiveBlending,
       transparent: true,
       sizeAttenuation: false
