@@ -42,7 +42,6 @@ html, body{
   background:var(--background-color);
   height:100vh;
   width:100%;
-  overflow:hidden;
 }
 
 /*Mobile*/
@@ -226,12 +225,14 @@ mobile-section{
   padding:16px 16px 4px 16px;
   margin-top:32px;
   font-size:28px;
+  cursor:pointer;
 }
 .mobile-product-description{
   box-sizing:border-box;
   font-size:16px;
   width:100%;
   opacity:0.4;
+  cursor:pointer;
 }
 .mobile-ledger-pic{
   position:relative;
@@ -239,8 +240,21 @@ mobile-section{
   margin-top:32px;
   width:80%;
   max-width:360px;
+  cursor:pointer;
 
   filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.4));
+}
+.mobile-product-features{
+  box-sizing:border-box;
+  display:inline-block;
+  width:80%;
+  max-width:360px;
+  font-size:14px;
+  opacity:0.4;
+  text-align:left;
+}
+.mobile-product-features li{
+  transform:translateX(-16px);
 }
 
 
